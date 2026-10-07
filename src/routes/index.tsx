@@ -1,5 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, ShieldCheck, Droplets, Cog, Factory } from "lucide-react";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Droplets,
+  Cog,
+  Factory,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Youtube,
+  Mail,
+} from "lucide-react";
+import { VeroxChatbot } from "@/components/VeroxChatbot";
 
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
@@ -54,6 +67,15 @@ const products = [
     desc: "High-viscosity film strength for hot climates, towing, and hard-working engines.",
     accent: "text-oil",
   },
+];
+
+const socials = [
+  { icon: Facebook, label: "Facebook", href: "https://facebook.com/veroxlubricants" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/veroxlubricants" },
+  { icon: Twitter, label: "X (Twitter)", href: "https://x.com/veroxlubricants" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/company/veroxlubricants" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@veroxlubricants" },
+  { icon: Mail, label: "Email", href: "mailto:quote@verox.com" },
 ];
 
 const industries = [
