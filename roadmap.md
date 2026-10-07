@@ -1,7 +1,7 @@
 # Verox website
 
-- [ ] Upload 3 product images as CDN assets
-- [ ] Design system (industrial steel/red/blue, matches Verox labels)
-- [ ] Landing page: hero with looping animation, products, industries, quality, contact
-- [ ] Looping oil animation on landing page
-- [ ] Head metadata + verify build
+- [x] Upload 3 product images as CDN assets
+- [x] Design system (industrial steel/gold, matches Verox labels)
+- [x] Landing page: hero with looping animation, products, industries, quality, contact
+- [x] Looping oil animation on landing page
+- [x] Head metadata + verify build
