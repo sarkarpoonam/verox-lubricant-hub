@@ -1,5 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, ShieldCheck, Droplets, Cog, Factory } from "lucide-react";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Droplets,
+  Cog,
+  Factory,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Youtube,
+  Mail,
+} from "lucide-react";
+import { VeroxChatbot } from "@/components/VeroxChatbot";
 
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
@@ -54,6 +67,15 @@ const products = [
     desc: "High-viscosity film strength for hot climates, towing, and hard-working engines.",
     accent: "text-oil",
   },
+];
+
+const socials = [
+  { icon: Facebook, label: "Facebook", href: "https://facebook.com/veroxlubricants" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/veroxlubricants" },
+  { icon: Twitter, label: "X (Twitter)", href: "https://x.com/veroxlubricants" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/company/veroxlubricants" },
+  { icon: Youtube, label: "YouTube", href: "https://youtube.com/@veroxlubricants" },
+  { icon: Mail, label: "Email", href: "mailto:quote@verox.com" },
 ];
 
 const industries = [
@@ -290,6 +312,21 @@ function Index() {
             Request a quote <ArrowRight className="size-4" />
           </a>
           <p className="mt-5 text-sm text-muted-foreground">quote@verox.com</p>
+
+          <div className="mt-10 flex items-center justify-center gap-3">
+            {socials.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Verox on ${label}`}
+                className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-oil hover:text-oil"
+              >
+                <Icon className="size-5" />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -299,9 +336,25 @@ function Index() {
           <span className="font-display text-base font-semibold tracking-[0.18em] text-foreground">
             VEROX<span className="text-oil">.</span>
           </span>
+          <div className="flex items-center gap-2">
+            {socials.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Verox on ${label}`}
+                className="flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-oil"
+              >
+                <Icon className="size-4" />
+              </a>
+            ))}
+          </div>
           <span>© 2026 Verox Lubricants · Engineered films</span>
         </div>
       </footer>
+
+      <VeroxChatbot />
     </div>
   );
 }
