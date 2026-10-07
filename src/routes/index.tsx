@@ -312,6 +312,21 @@ function Index() {
             Request a quote <ArrowRight className="size-4" />
           </a>
           <p className="mt-5 text-sm text-muted-foreground">quote@verox.com</p>
+
+          <div className="mt-10 flex items-center justify-center gap-3">
+            {socials.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Verox on ${label}`}
+                className="flex size-11 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:border-oil hover:text-oil"
+              >
+                <Icon className="size-5" />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -321,9 +336,25 @@ function Index() {
           <span className="font-display text-base font-semibold tracking-[0.18em] text-foreground">
             VEROX<span className="text-oil">.</span>
           </span>
+          <div className="flex items-center gap-2">
+            {socials.map(({ icon: Icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Verox on ${label}`}
+                className="flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-oil"
+              >
+                <Icon className="size-4" />
+              </a>
+            ))}
+          </div>
           <span>© 2026 Verox Lubricants · Engineered films</span>
         </div>
       </footer>
+
+      <VeroxChatbot />
     </div>
   );
 }
