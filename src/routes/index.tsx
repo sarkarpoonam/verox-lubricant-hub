@@ -99,6 +99,18 @@ function Index() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/20" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
+          <div className="light-streak" aria-hidden />
+          <div className="pointer-events-none absolute inset-0" aria-hidden>
+            {[
+              [12, 0], [28, 1.6], [45, 0.8], [62, 2.4], [74, 0.3], [86, 1.9], [94, 3.1], [55, 3.4],
+            ].map(([left, delay], i) => (
+              <span
+                key={i}
+                className="oil-drop"
+                style={{ left: `${left}%`, animationDelay: `${delay}s`, animationDuration: `${3.5 + (i % 3)}s` }}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-center px-5 py-24">
