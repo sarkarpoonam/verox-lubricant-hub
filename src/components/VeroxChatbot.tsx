@@ -40,7 +40,7 @@ const answers: { keys: string[]; reply: string }[] = [
       "You can reach us at quote@verox.com, or use the Contact section at the bottom of this page. We reply within one business day.",
   },
   {
-    keys: ["hi", "hello", "hey", "salam", "assalam"],
+    keys: ["hello", "hey", "salam", "assalam"],
     reply: "Hello! Ask me about Verox oil grades, pricing, certifications, or how to get a quote.",
   },
 ];
@@ -52,11 +52,14 @@ const quickReplies = ["Which oil for my car?", "Get a quote", "Certifications"];
 
 function getReply(input: string): string {
   const q = input.toLowerCase();
+  if (q.includes("oil") || q.includes("car") || q.includes("engine") || q.includes("which") || q.includes("recommend")) {
+    return "For modern gasoline engines, choose Verox 5W-30 (full synthetic). For daily drivers and high-mileage engines, 10W-40. For hot climates, towing, or heavy duty, 20W-50. Tell me your vehicle and I can narrow it down.";
+  }
+  if (/\bhi\b/.test(q)) {
+    return "Hello! Ask me about Verox oil grades, pricing, certifications, or how to get a quote.";
+  }
   for (const a of answers) {
     if (a.keys.some((k) => q.includes(k))) return a.reply;
-  }
-  if (q.includes("oil") || q.includes("car") || q.includes("engine") || q.includes("which")) {
-    return "For modern gasoline engines, choose Verox 5W-30 (full synthetic). For daily drivers and high-mileage engines, 10W-40. For hot climates, towing, or heavy duty, 20W-50. Tell me your vehicle and I can narrow it down.";
   }
   return fallback;
 }
