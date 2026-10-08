@@ -52,7 +52,7 @@ const products = [
     accent: "text-brandred",
   },
   {
-    img: verox10w40.url,
+    img: verox10w40,
     name: "Verox 10W-40",
     spec: "SAE 10W-40 · API SN",
     tag: "Semi Synthetic",
