@@ -16,9 +16,9 @@ import { VeroxChatbot } from "@/components/VeroxChatbot";
 
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
-import verox5w30 from "@/assets/verox-5w30.jpeg.asset.json";
-import verox10w40 from "@/assets/verox-10w40.jpeg.asset.json";
-import verox20w50 from "@/assets/verox-20w50.jpeg.asset.json";
+import verox5w30 from "@/assets/verox-5w30-bg.jpg";
+import verox10w40 from "@/assets/verox-10w40-bg.jpg";
+import verox20w50 from "@/assets/verox-20w50-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
