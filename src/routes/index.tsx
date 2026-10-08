@@ -92,7 +92,12 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-14 w-auto" />
+          <a href="#top" className="flex items-center gap-3">
+            <img src={veroxLogo} alt="" aria-hidden width={1024} height={1024} className="h-11 w-auto" />
+            <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground">
+              Verox
+            </span>
+          </a>
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex">
             <a href="#products" className="transition-colors hover:text-foreground">Products</a>
             <a href="#technology" className="transition-colors hover:text-foreground">Technology</a>

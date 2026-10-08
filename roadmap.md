@@ -7,4 +7,5 @@
 - [x] Head metadata + verify build
 - [x] Premium dark-studio backgrounds on product photos
 - [x] Verox logo: header, footer, chatbot panel, favicon
+- [x] "Verox" name text next to logo in header
 - [ ] Replace placeholder contact email + social URLs with real details (waiting on user)
