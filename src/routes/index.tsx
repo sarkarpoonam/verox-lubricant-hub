@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import { VeroxChatbot } from "@/components/VeroxChatbot";
 
-import veroxLogo from "@/assets/verox-logo-white.png";
+import veroxLogo from "@/assets/verox-bottle-logo.png";
+import veroxMark from "@/assets/verox-bottle-mark.png";
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
 import verox5w30 from "@/assets/verox-5w30-bg.jpg";
@@ -93,7 +94,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
-            <img src={veroxLogo} alt="" aria-hidden width={1024} height={1024} className="h-11 w-auto" />
+            <img src={veroxMark} alt="" aria-hidden className="h-11 w-auto" />
             <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground">
               Verox
             </span>
@@ -337,7 +338,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row">
-          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-12 w-auto" />
+          <img src={veroxLogo} alt="Verox Lubricants" className="h-16 w-auto" />
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label, href }) => (
               <a
