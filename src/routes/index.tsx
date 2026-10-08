@@ -60,7 +60,7 @@ const products = [
     accent: "text-brandblue",
   },
   {
-    img: verox20w50.url,
+    img: verox20w50,
     name: "Verox 20W-50",
     spec: "SAE 20W-50 · API SN",
     tag: "Heavy Duty",
