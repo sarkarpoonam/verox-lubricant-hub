@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { MessageCircle, X, Send, Droplet } from "lucide-react";
+import { MessageCircle, X, Send } from "lucide-react";
+import veroxMark from "@/assets/verox-mark.png";
 
 type Msg = { from: "bot" | "user"; text: string };
 

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { VeroxChatbot } from "@/components/VeroxChatbot";
 
+import veroxLogo from "@/assets/verox-logo-white.png";
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
 import verox5w30 from "@/assets/verox-5w30-bg.jpg";
