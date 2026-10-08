@@ -44,7 +44,7 @@ export const Route = createFileRoute("/")({
 
 const products = [
   {
-    img: verox5w30.url,
+    img: verox5w30,
     name: "Verox 5W-30",
     spec: "SAE 5W-30 · API SP",
     tag: "Full Synthetic",
