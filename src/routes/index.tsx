@@ -14,11 +14,12 @@ import {
 } from "lucide-react";
 import { VeroxChatbot } from "@/components/VeroxChatbot";
 
+import veroxLogo from "@/assets/verox-logo-white.png";
 import oilHero from "@/assets/oil-hero.jpg";
 import oilGears from "@/assets/oil-gears.jpg";
-import verox5w30 from "@/assets/verox-5w30.jpeg.asset.json";
-import verox10w40 from "@/assets/verox-10w40.jpeg.asset.json";
-import verox20w50 from "@/assets/verox-20w50.jpeg.asset.json";
+import verox5w30 from "@/assets/verox-5w30-bg.jpg";
+import verox10w40 from "@/assets/verox-10w40-bg.jpg";
+import verox20w50 from "@/assets/verox-20w50-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,7 +45,7 @@ export const Route = createFileRoute("/")({
 
 const products = [
   {
-    img: verox5w30.url,
+    img: verox5w30,
     name: "Verox 5W-30",
     spec: "SAE 5W-30 · API SP",
     tag: "Full Synthetic",
@@ -52,7 +53,7 @@ const products = [
     accent: "text-brandred",
   },
   {
-    img: verox10w40.url,
+    img: verox10w40,
     name: "Verox 10W-40",
     spec: "SAE 10W-40 · API SN",
     tag: "Semi Synthetic",
@@ -60,7 +61,7 @@ const products = [
     accent: "text-brandblue",
   },
   {
-    img: verox20w50.url,
+    img: verox20w50,
     name: "Verox 20W-50",
     spec: "SAE 20W-50 · API SN",
     tag: "Heavy Duty",
@@ -91,9 +92,7 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-          <span className="font-display text-2xl font-semibold tracking-[0.18em]">
-            VEROX<span className="text-oil">.</span>
-          </span>
+          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-14 w-auto" />
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex">
             <a href="#products" className="transition-colors hover:text-foreground">Products</a>
             <a href="#technology" className="transition-colors hover:text-foreground">Technology</a>
@@ -333,9 +332,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row">
-          <span className="font-display text-base font-semibold tracking-[0.18em] text-foreground">
-            VEROX<span className="text-oil">.</span>
-          </span>
+          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-12 w-auto" />
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label, href }) => (
               <a

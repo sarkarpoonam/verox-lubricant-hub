@@ -5,3 +5,6 @@
 - [x] Landing page: hero with looping animation, products, industries, quality, contact
 - [x] Looping oil animation on landing page
 - [x] Head metadata + verify build
+- [x] Premium dark-studio backgrounds on product photos
+- [x] Verox logo: header, footer, chatbot panel, favicon
+- [ ] Replace placeholder contact email + social URLs with real details (waiting on user)
