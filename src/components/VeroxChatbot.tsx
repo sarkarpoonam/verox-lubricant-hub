@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
-import veroxMark from "@/assets/verox-bottle-mark.png";
+import veroxMark from "@/assets/verox-bottle-mark.png.asset.json";
 
 type Msg = { from: "bot" | "user"; text: string };
 
@@ -108,7 +108,7 @@ export function VeroxChatbot() {
         <div className="fixed bottom-24 right-5 z-50 flex h-[28rem] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-xl border border-border bg-card shadow-2xl shadow-black/50">
           <div className="flex items-center gap-3 border-b border-border bg-secondary px-4 py-3">
             <span className="flex size-9 items-center justify-center rounded-full bg-secondary">
-               <img src={veroxMark} alt="Verox logo" className="size-6 object-contain" />
+               <img src={veroxMark.url} alt="Verox logo" className="size-6 object-contain" />
             </span>
             <div>
               <p className="font-display text-lg font-semibold uppercase tracking-wide leading-none">
