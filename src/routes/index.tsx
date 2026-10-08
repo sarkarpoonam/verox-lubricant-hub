@@ -92,9 +92,7 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-          <span className="font-display text-2xl font-semibold tracking-[0.18em]">
-            VEROX<span className="text-oil">.</span>
-          </span>
+          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-14 w-auto" />
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex">
             <a href="#products" className="transition-colors hover:text-foreground">Products</a>
             <a href="#technology" className="transition-colors hover:text-foreground">Technology</a>
@@ -334,9 +332,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row">
-          <span className="font-display text-base font-semibold tracking-[0.18em] text-foreground">
-            VEROX<span className="text-oil">.</span>
-          </span>
+          <img src={veroxLogo} alt="Verox Lubricants" width={1024} height={1024} className="h-12 w-auto" />
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label, href }) => (
               <a

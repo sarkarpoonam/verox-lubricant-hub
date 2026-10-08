@@ -107,8 +107,8 @@ export function VeroxChatbot() {
       {open && (
         <div className="fixed bottom-24 right-5 z-50 flex h-[28rem] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-xl border border-border bg-card shadow-2xl shadow-black/50">
           <div className="flex items-center gap-3 border-b border-border bg-secondary px-4 py-3">
-            <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-              <Droplet className="size-4" />
+            <span className="flex size-9 items-center justify-center rounded-full bg-secondary">
+              <img src={veroxMark} alt="Verox logo" width={1024} height={1024} className="size-6" />
             </span>
             <div>
               <p className="font-display text-lg font-semibold uppercase tracking-wide leading-none">
