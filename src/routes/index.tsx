@@ -13,14 +13,15 @@ import {
   Mail,
 } from "lucide-react";
 import { VeroxChatbot } from "@/components/VeroxChatbot";
+import { ProductCard, type Product } from "@/components/ProductCard";
 
-import veroxLogo from "@/assets/verox-bottle-logo.png";
-import veroxMark from "@/assets/verox-bottle-mark.png";
-import oilHero from "@/assets/oil-hero.jpg";
-import oilGears from "@/assets/oil-gears.jpg";
-import verox5w30 from "@/assets/verox-5w30-bg.jpg";
-import verox10w40 from "@/assets/verox-10w40-bg.jpg";
-import verox20w50 from "@/assets/verox-20w50-bg.jpg";
+import veroxLogo from "@/assets/verox-bottle-logo.png.asset.json";
+import veroxMark from "@/assets/verox-bottle-mark.png.asset.json";
+import oilHero from "@/assets/oil-hero.jpg.asset.json";
+import oilGears from "@/assets/oil-gears.jpg.asset.json";
+import verox5w30 from "@/assets/verox-5w30-bg.jpg.asset.json";
+import verox10w40 from "@/assets/verox-10w40-bg.jpg.asset.json";
+import verox20w50 from "@/assets/verox-20w50-bg.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,30 +45,36 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const products = [
+const products: Product[] = [
   {
-    img: verox5w30,
+    img: verox5w30.url,
     name: "Verox 5W-30",
     spec: "SAE 5W-30 · API SP",
     tag: "Full Synthetic",
     desc: "MaxPower Technology for modern gasoline engines. Prevents breakdown in extreme conditions.",
     accent: "text-brandred",
+    glow: "var(--brandred)",
+    delay: "0ms",
   },
   {
-    img: verox10w40,
+    img: verox10w40.url,
     name: "Verox 10W-40",
     spec: "SAE 10W-40 · API SN",
     tag: "Semi Synthetic",
     desc: "Balanced protection for daily drivers and high-mileage engines, with premium seal conditioners.",
     accent: "text-brandblue",
+    glow: "var(--brandblue)",
+    delay: "1.2s",
   },
   {
-    img: verox20w50,
+    img: verox20w50.url,
     name: "Verox 20W-50",
     spec: "SAE 20W-50 · API SN",
     tag: "Heavy Duty",
     desc: "High-viscosity film strength for hot climates, towing, and hard-working engines.",
     accent: "text-oil",
+    glow: "var(--oil)",
+    delay: "2.4s",
   },
 ];
 
@@ -94,7 +101,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
-            <img src={veroxMark} alt="" aria-hidden className="h-11 w-auto" />
+            <img src={veroxMark.url} alt="" aria-hidden className="h-11 w-auto" />
             <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground">
               Verox
             </span>
@@ -118,7 +125,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={oilHero}
+            src={oilHero.url}
             alt="Golden Verox lubricant oil in motion"
             width={1920}
             height={1088}
@@ -208,29 +215,7 @@ function Index() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
-            <article
-              key={p.name}
-              className="sheen-card group overflow-hidden rounded-xl border border-border"
-            >
-              <div className="aspect-square overflow-hidden bg-secondary">
-                <img
-                  src={p.img}
-                  alt={`${p.name} bottle`}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-5">
-                <span className={`text-[11px] font-bold uppercase tracking-[0.2em] ${p.accent}`}>
-                  {p.tag}
-                </span>
-                <h3 className="mt-2 font-display text-2xl font-semibold uppercase">{p.name}</h3>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  {p.spec}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-              </div>
-            </article>
+            <ProductCard key={p.name} p={p} />
           ))}
         </div>
       </section>
@@ -240,7 +225,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-24 lg:grid-cols-2">
           <div className="overflow-hidden rounded-xl border border-border">
             <img
-              src={oilGears}
+              src={oilGears.url}
               alt="Golden oil film coating precision-machined gear teeth"
               loading="lazy"
               width={1280}
@@ -338,7 +323,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row">
-          <img src={veroxLogo} alt="Verox Lubricants" className="h-16 w-auto" />
+          <img src={veroxLogo.url} alt="Verox Lubricants" className="h-16 w-auto" />
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label, href }) => (
               <a
