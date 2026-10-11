@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
-import veroxMark from "@/assets/verox-bottle-mark.png.asset.json";
+const veroxMark = "/images/verox-bottle-mark.png";
 
 type Msg = { from: "bot" | "user"; text: string };
 

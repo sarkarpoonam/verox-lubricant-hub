@@ -15,13 +15,13 @@ import {
 import { VeroxChatbot } from "@/components/VeroxChatbot";
 import { ProductCard, type Product } from "@/components/ProductCard";
 
-import veroxLogo from "@/assets/verox-bottle-logo.png.asset.json";
-import veroxMark from "@/assets/verox-bottle-mark.png.asset.json";
-import oilHero from "@/assets/oil-hero.jpg.asset.json";
-import oilGears from "@/assets/oil-gears.jpg.asset.json";
-import verox5w30 from "@/assets/verox-5w30-bg.jpg.asset.json";
-import verox10w40 from "@/assets/verox-10w40-bg.jpg.asset.json";
-import verox20w50 from "@/assets/verox-20w50-bg.jpg.asset.json";
+const veroxLogo = "/images/verox-bottle-logo.png";
+const veroxMark = "/images/verox-bottle-mark.png";
+const oilHero = "/images/oil-hero.jpg";
+const oilGears = "/images/oil-gears.jpg";
+const verox5w30 = "/images/verox-5w30-bg.jpg";
+const verox10w40 = "/images/verox-10w40-bg.jpg";
+const verox20w50 = "/images/verox-20w50-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
