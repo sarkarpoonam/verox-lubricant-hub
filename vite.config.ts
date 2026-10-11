@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Outside Lovable, build a standalone Node server (`.output`) that any Node host can run
+  // with `node .output/server/index.mjs`. Lovable's own build environment overrides this
+  // with its Cloudflare target, so publishing from Lovable is unaffected.
+  nitro: { preset: "node-server" },
 });

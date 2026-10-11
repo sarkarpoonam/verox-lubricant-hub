@@ -12,3 +12,8 @@
 - [ ] Replace placeholder contact email + social URLs with real details (waiting on user)
 - [x] Product image motion: slow float, light glint, coloured glow (added)
 - [x] Oil wave + cursor tilt on product images (added, then removed at user request)
+- [x] Photos moved into public/images so the site is self-contained on any host
+- [x] Node server build + start script so GoDaddy Node.js Hosting can run it
+- [x] Verify standalone Node build renders with all photos, no console errors
+- [ ] Upload to GoDaddy Node.js Hosting (waiting on user: GoDaddy account + plan)
+- [ ] Point a custom domain at the GoDaddy app (waiting on user: which domain)
