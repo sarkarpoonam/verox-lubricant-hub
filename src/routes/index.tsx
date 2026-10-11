@@ -47,7 +47,7 @@ export const Route = createFileRoute("/")({
 
 const products: Product[] = [
   {
-    img: verox5w30.url,
+    img: verox5w30,
     name: "Verox 5W-30",
     spec: "SAE 5W-30 · API SP",
     tag: "Full Synthetic",
@@ -57,7 +57,7 @@ const products: Product[] = [
     delay: "0ms",
   },
   {
-    img: verox10w40.url,
+    img: verox10w40,
     name: "Verox 10W-40",
     spec: "SAE 10W-40 · API SN",
     tag: "Semi Synthetic",
@@ -67,7 +67,7 @@ const products: Product[] = [
     delay: "1.2s",
   },
   {
-    img: verox20w50.url,
+    img: verox20w50,
     name: "Verox 20W-50",
     spec: "SAE 20W-50 · API SN",
     tag: "Heavy Duty",
@@ -101,7 +101,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
-            <img src={veroxMark.url} alt="" aria-hidden className="h-11 w-auto" />
+            <img src={veroxMark} alt="" aria-hidden className="h-11 w-auto" />
             <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground">
               Verox
             </span>
@@ -125,7 +125,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={oilHero.url}
+            src={oilHero}
             alt="Golden Verox lubricant oil in motion"
             width={1920}
             height={1088}
@@ -225,7 +225,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-24 lg:grid-cols-2">
           <div className="overflow-hidden rounded-xl border border-border">
             <img
-              src={oilGears.url}
+              src={oilGears}
               alt="Golden oil film coating precision-machined gear teeth"
               loading="lazy"
               width={1280}
@@ -323,7 +323,7 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-[11px] uppercase tracking-[0.2em] text-muted-foreground sm:flex-row">
-          <img src={veroxLogo.url} alt="Verox Lubricants" className="h-16 w-auto" />
+          <img src={veroxLogo} alt="Verox Lubricants" className="h-16 w-auto" />
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label, href }) => (
               <a
