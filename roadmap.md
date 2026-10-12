@@ -17,5 +17,6 @@
 - [x] Photos moved into public/images so the site is self-contained on any host
 - [x] Node server build + start script so GoDaddy Node.js Hosting can run it
 - [x] Verify standalone Node build renders with all photos, no console errors
-- [ ] Upload to GoDaddy Node.js Hosting (waiting on user: GoDaddy account + plan)
+- [ ] Push the site code to GitHub (user chose this route; needs the editor's GitHub connect or a token connection)
+- [ ] Deploy on GoDaddy Node.js Hosting from the GitHub repo (user has the plan)
 - [ ] Point a custom domain at the GoDaddy app (waiting on user: which domain)
