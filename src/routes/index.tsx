@@ -19,9 +19,6 @@ const veroxLogo = "/images/verox-bottle-logo.png";
 const veroxMark = "/images/verox-bottle-mark.png";
 const oilHero = "/images/oil-hero.jpg";
 const oilGears = "/images/oil-gears.jpg";
-const verox5w30 = "/images/verox-5w30-bg.jpg";
-const verox10w40 = "/images/verox-10w40-bg.jpg";
-const verox20w50 = "/images/verox-20w50-bg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,34 +44,44 @@ export const Route = createFileRoute("/")({
 
 const products: Product[] = [
   {
-    img: verox5w30,
-    name: "Verox 5W-30",
-    spec: "SAE 5W-30 · API SP",
-    tag: "Full Synthetic",
-    desc: "MaxPower Technology for modern gasoline engines. Prevents breakdown in extreme conditions.",
+    img: "/images/gasoline-engine-oil.jpg",
+    name: "Gasoline Engine Oil",
+    spec: "Passenger cars · Gasoline engines",
+    tag: "01 / Gasoline",
+    desc: "Engine lubrication for gasoline-powered passenger cars and everyday driving.",
     accent: "text-brandred",
     glow: "var(--brandred)",
     delay: "0ms",
   },
   {
-    img: verox10w40,
-    name: "Verox 10W-40",
-    spec: "SAE 10W-40 · API SN",
-    tag: "Semi Synthetic",
-    desc: "Balanced protection for daily drivers and high-mileage engines, with premium seal conditioners.",
+    img: "/images/diesel-engine-oil.jpg",
+    name: "Diesel Engine Oil",
+    spec: "Trucks · Fleets · Diesel engines",
+    tag: "02 / Diesel",
+    desc: "Engine lubrication for diesel vehicles, commercial fleets and heavy-duty applications.",
     accent: "text-brandblue",
     glow: "var(--brandblue)",
     delay: "1.2s",
   },
   {
-    img: verox20w50,
-    name: "Verox 20W-50",
-    spec: "SAE 20W-50 · API SN",
-    tag: "Heavy Duty",
-    desc: "High-viscosity film strength for hot climates, towing, and hard-working engines.",
+    img: "/images/gear-transmission-fluids.jpg",
+    name: "Gear and Automatic Transmission Fluids",
+    spec: "Gearboxes · Automatic transmissions",
+    tag: "03 / Transmission",
+    desc: "Lubricants and fluids for gears, drivetrains and automatic transmission systems.",
     accent: "text-oil",
     glow: "var(--oil)",
     delay: "2.4s",
+  },
+  {
+    img: "/images/industrial-oil.jpg",
+    name: "Industrial Oil",
+    spec: "Hydraulics · Machinery · Manufacturing",
+    tag: "04 / Industrial",
+    desc: "Lubrication for industrial equipment, hydraulic systems and manufacturing machinery.",
+    accent: "text-oil",
+    glow: "var(--oil)",
+    delay: "3.6s",
   },
 ];
 
@@ -210,15 +217,15 @@ function Index() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-oil">The range</p>
             <h2 className="mt-3 font-display text-4xl font-semibold uppercase tracking-tight sm:text-5xl">
-              MaxPower engine oils
+              Our product range
             </h2>
           </div>
           <span className="hidden text-xs uppercase tracking-[0.2em] text-muted-foreground sm:block">
-            03 grades
+            04 categories
           </span>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {products.map((p) => (
             <ProductCard key={p.name} p={p} />
           ))}

@@ -1,5 +1,7 @@
 # Verox website
 
+- [x] Update products to the four requested lubricant categories with related images
+
 - [x] Upload 3 product images as CDN assets
 - [x] Design system (industrial steel/gold, matches Verox labels)
 - [x] Landing page: hero with looping animation, products, industries, quality, contact

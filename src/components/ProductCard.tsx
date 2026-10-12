@@ -16,14 +16,16 @@ export function ProductCard({ p }: { p: Product }) {
 
   return (
     <article className="sheen-card group relative overflow-hidden rounded-xl border border-border transition-transform duration-500 hover:-translate-y-1.5">
-      <div className="relative aspect-square overflow-hidden bg-secondary">
+      <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
         <div
           className="animate-bottle-float h-full w-full"
           style={{ animationDelay: p.delay }}
         >
           <img
             src={p.img}
-            alt={`${p.name} bottle`}
+            alt={`${p.name} application`}
+            width={1024}
+            height={1024}
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
           />
