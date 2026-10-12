@@ -44,7 +44,7 @@ export const Route = createFileRoute("/")({
 
 const products: Product[] = [
   {
-    img: "/images/gasoline-engine-oil.jpg",
+    img: "/images/vehicle-gasoline.jpg",
     name: "Gasoline Engine Oil",
     spec: "Passenger cars · Gasoline engines",
     tag: "01 / Gasoline",
@@ -54,7 +54,7 @@ const products: Product[] = [
     delay: "0ms",
   },
   {
-    img: "/images/diesel-engine-oil.jpg",
+    img: "/images/vehicle-diesel.jpg",
     name: "Diesel Engine Oil",
     spec: "Trucks · Fleets · Diesel engines",
     tag: "02 / Diesel",
@@ -64,7 +64,7 @@ const products: Product[] = [
     delay: "1.2s",
   },
   {
-    img: "/images/gear-transmission-fluids.jpg",
+    img: "/images/vehicle-transmission.jpg",
     name: "Gear and Automatic Transmission Fluids",
     spec: "Gearboxes · Automatic transmissions",
     tag: "03 / Transmission",
@@ -74,7 +74,7 @@ const products: Product[] = [
     delay: "2.4s",
   },
   {
-    img: "/images/industrial-oil.jpg",
+    img: "/images/vehicle-industrial.jpg",
     name: "Industrial Oil",
     spec: "Hydraulics · Machinery · Manufacturing",
     tag: "04 / Industrial",
