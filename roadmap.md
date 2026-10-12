@@ -9,7 +9,7 @@
 - [x] Verox logo: header, footer, chatbot panel, favicon
 - [x] "Verox" name text next to logo in header
 - [x] Header brand text reads "Verox Lubricants" (verified desktop + phone)
-- [ ] Rebuild the GoDaddy zip so it carries the header change
+- [x] Rebuild the GoDaddy zip so it carries the header change (93 files, verified)
 - [x] Match website logo and browser icon to the original bottle branding
 - [ ] Replace placeholder contact email + social URLs with real details (waiting on user)
 - [x] Product image motion: slow float, light glint, coloured glow (added)
