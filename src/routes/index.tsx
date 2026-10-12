@@ -102,8 +102,8 @@ function Index() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
             <img src={veroxMark} alt="" aria-hidden className="h-11 w-auto" />
-            <span className="font-display text-3xl font-bold uppercase tracking-[0.18em] text-foreground">
-              Verox
+            <span className="font-display text-xl font-bold uppercase tracking-[0.14em] text-foreground sm:text-3xl sm:tracking-[0.18em]">
+              Verox Lubricants
             </span>
           </a>
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground md:flex">
