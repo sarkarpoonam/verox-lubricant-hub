@@ -1,6 +1,7 @@
 # Verox website
 
 - [x] Update products to the four requested lubricant categories with related images
+- [x] Vehicle photos on the product cards: sedan, semi truck, car on lift, excavator (verified desktop + phone)
 
 - [x] Upload 3 product images as CDN assets
 - [x] Design system (industrial steel/gold, matches Verox labels)
