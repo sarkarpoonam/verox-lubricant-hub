@@ -15,7 +15,7 @@
 - [x] Rebuild the GoDaddy zip so it carries the header change (93 files, verified)
 - [x] Match website logo and browser icon to the original bottle branding
 - [ ] Replace placeholder contact email + social URLs with real details (waiting on user)
-- [x] Product image motion: slow float, light glint, coloured glow (added)
+- [x] Product section animations removed entirely (float, glint, glow) — cards static, hero animation untouched
 - [x] Oil wave + cursor tilt on product images (added, then removed at user request)
 - [x] Photos moved into public/images so the site is self-contained on any host
 - [x] Node server build + start script so GoDaddy Node.js Hosting can run it
