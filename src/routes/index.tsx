@@ -50,8 +50,6 @@ const products: Product[] = [
     tag: "01 / Gasoline",
     desc: "Engine lubrication for gasoline-powered passenger cars and everyday driving.",
     accent: "text-brandred",
-    glow: "var(--brandred)",
-    delay: "0ms",
   },
   {
     img: "/images/vehicle-diesel.jpg",
@@ -60,8 +58,6 @@ const products: Product[] = [
     tag: "02 / Diesel",
     desc: "Engine lubrication for diesel vehicles, commercial fleets and heavy-duty applications.",
     accent: "text-brandblue",
-    glow: "var(--brandblue)",
-    delay: "1.2s",
   },
   {
     img: "/images/vehicle-transmission.jpg",
@@ -70,8 +66,6 @@ const products: Product[] = [
     tag: "03 / Transmission",
     desc: "Lubricants and fluids for gears, drivetrains and automatic transmission systems.",
     accent: "text-oil",
-    glow: "var(--oil)",
-    delay: "2.4s",
   },
   {
     img: "/images/vehicle-industrial.jpg",
@@ -80,8 +74,6 @@ const products: Product[] = [
     tag: "04 / Industrial",
     desc: "Lubrication for industrial equipment, hydraulic systems and manufacturing machinery.",
     accent: "text-oil",
-    glow: "var(--oil)",
-    delay: "3.6s",
   },
 ];
 
